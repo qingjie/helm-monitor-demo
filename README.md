@@ -8,7 +8,7 @@ helm plugin install https://github.com/ContainerSolutions/helm-monitor
 sum by (version,code)(http_requests_total{app="my-app"})
 ```
 
-3. open a terminal
+3. open a terminal, install/upgrade/rollback with helm
 ```
 helm install --name my-app --set image.tag=1.0.0 ./app/charts
 
